@@ -1,0 +1,15 @@
+print('Welcome to banking')
+print('Create account Now !')
+username = input('Enter your username: ')
+password = input('Enter your password: ')
+
+print(f'Welcome {username}',' you have created an account successfully!!')
+print('login now ')
+
+username2 = input('Enter your username: ')
+password2 = input('Enter your password: ')
+
+if username == username2 and password==password2:
+    print('You have successfully logged in!')
+else:
+    print('Invalid credentials!')
