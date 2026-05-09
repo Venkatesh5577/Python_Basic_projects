@@ -450,5 +450,84 @@ make_sound(c)
 # obj.static()
 # obj.show()
 #
+# # # class Factory:
+# # #     def __init__(self, material, zips, pockets):
+# # #         self.material = material
+# # #         self.zips = zips
+# # #         self.pockets = pockets
+# # #
+# # #     def show(self):
+# # #         print(f"your objects for bags is: {self.material}, {self.zips}, {self.pockets}")
+# # #
+# # #
+# # # Nike = Factory("leather", 1, 3)
+# # # campus = Factory("Nylon", 3, 3)
+# # #
+# # # Nike.show()
+# # # campus.show()
+# #
+# class Animal:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#
+#     def show(self):
+#         print(f'Mithun name {self.name}, age {self.age}')
+#
+#     @classmethod
+#     def hello(cls):
+#         print("This is a class method")
+#
+#     @staticmethod
+#     def static():
+#         print(f'Enzo name ')
+#
+#
+# obj = Animal('Julia', 24)
+#
+# obj.hello()
+# obj.static()
+# obj.show()
+#
+# class FactoryMumbai:
+#     a = "hello i am in nike, 24"
+#     def hello(tiger):
+#         print("Hello Mumbai")
+#
+#
+# class FactoryPune(FactoryMumbai):
+#     pass
+#
+#
+#
+# obj = FactoryMumbai()
+# obj2 = FactoryPune()
+#
+# print(obj.a)
+# print(obj2.a)
+# obj.hello()
+# obj2.hello()
+
+
+# inheritance_constructor(it is essential to have a child its own show() function)
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+#
+#     def show(self):
+#         print(f"my name is {self.name}")
+# class Human(Animal):
+#     def __init__(self, name , age):
+#         super().__init__(name)
+#         self.age = age
+#
+#     def show(self):
+#         print(f"I am a human , my name is {self.name}, my age is {self.age}")
+#
+# animal1 = Animal("tiger")
+# person1 = Human(" venky", 21)
+#
+# animal1.show()
+# person1.show()
 
 
