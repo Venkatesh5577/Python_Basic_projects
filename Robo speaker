@@ -1,0 +1,48 @@
+import speech_recognition as sr
+import pyttsx3
+
+speaker = pyttsx3.init()
+recognizer = sr.Recognizer()
+
+def speak(text):
+    print("RDspeaker:", text)
+    speaker.say(text)
+    speaker.runAndWait()
+
+
+print("Welcome to RDspeaker, I will assist you with your work! :)")
+
+while True:
+
+    with sr.Microphone() as source:
+        print("Listening...")
+        recognizer.adjust_for_ambient_noise(source)
+
+        audio = recognizer.listen(source)
+
+    try:
+        command = recognizer.recognize_google(audio)
+
+        print("You:", command)
+
+        if command.lower() == "quit":
+            speak("Bye Bye bro")
+            break
+
+        # simple responses
+        if "hello" in command.lower():
+            speak("Hello! How can I help you?")
+
+        elif "your name" in command.lower():
+            speak("My name is RDspeaker")
+
+        else:
+            speak("You said " + command)
+
+    except sr.UnknownValueError:
+
+        speak("Sorry, I did not understand")
+        break
+
+    except sr.RequestError:
+        speak("Internet error, speech service is not available")
