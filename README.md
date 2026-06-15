@@ -60,4 +60,4 @@ Each project focuses on practicing real-world concepts like:
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/python-projects.git
+git clone https://github.com/Venkatesh5577/Python_Basic_projects.git
